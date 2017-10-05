@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1BA923B-F811-BDAC-1129-32F7ACBD6416" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="LOG_MENSAGEM">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:41:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<abbreviation>LOG_MSG_NVL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_MENSAGEM" id="7DB203C8-2BB1-0BB4-D7D6-C2153DD85252">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:42:07 UTC</createdTime>
+<commentInRDBMS>Chave primária</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_MSG</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_TIPO_MENSAGEM" id="79AA5EEF-BE2B-75E6-80DC-068D83A8FE54">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:50:52 UTC</createdTime>
+<commentInRDBMS>Tipo de mensagem</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_TP_MSG</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DDA61B1-1067-D142-4593-17AD6ABFA5FF" referredColumn="28703137-D499-65A8-555B-D65E0706BA63"/>
+</associations>
+</Column>
+<Column name="COD_NIVEL" id="1F4B6E5B-C229-287A-C479-A48A2DF2E352">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:42:17 UTC</createdTime>
+<commentInRDBMS>Nível de detalhamento desse tipo</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_NVL</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDBD0E84-966C-69E1-4AAE-44C7E36F6912" referredColumn="407FCF84-BA33-CCFB-B16A-A83FBB3986B8"/>
+</associations>
+</Column>
+<Column name="MENSAGEM" id="BE196EC3-08B9-AB16-A205-1F4FB0BB9622">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:42:35 UTC</createdTime>
+<commentInRDBMS>Mensagem com variáveis para ser exibida para o usuário</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19EE4D85-98D1-005D-EFB4-BF3346FFB0BE" name="PK_LOG_MENSAGEM_NIVEL">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:42:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DB203C8-2BB1-0BB4-D7D6-C2153DD85252"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E3DB9D6-3021-D72C-E5A8-55354C1E0BFE" name="UN_LOG_MENSAGEM">
+<createdBy>rgil</createdBy>
+<createdTime>2015-09-21 12:02:36 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79AA5EEF-BE2B-75E6-80DC-068D83A8FE54"/>
+<colUsage columnID="1F4B6E5B-C229-287A-C479-A48A2DF2E352"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B8D5B07-EC36-C3B6-7BA6-F925787802DC" name="FK_LOG_MENSAGEM_NIVEL_MSG">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:43:27 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79AA5EEF-BE2B-75E6-80DC-068D83A8FE54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="893537F1-41B7-4CDA-674F-CD5880D46BDC" name="FK_LOG_MENSAGEM_NIVEL_NVL">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:43:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F4B6E5B-C229-287A-C479-A48A2DF2E352"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

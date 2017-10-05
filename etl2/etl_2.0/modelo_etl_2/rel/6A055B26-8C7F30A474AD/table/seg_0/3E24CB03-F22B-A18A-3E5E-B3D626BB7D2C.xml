@@ -1,0 +1,210 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E24CB03-F22B-A18A-3E5E-B3D626BB7D2C" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="COLUNA">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>COLUNA</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Definição das colunas (dicionário)</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_COLUNA" id="E87AEBD6-8756-D889-4B21-803622330C9B">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>COLUNA</sourceObjSchema>
+<sourceObjName>COD_COLUNA</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Chave primária</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_TABELA" id="34D4BCA3-CCD4-0008-0191-CBF866427151">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>COLUNA</sourceObjSchema>
+<sourceObjName>COD_TABELA</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Código da tabela &apos;dona&apos; da coluna.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C5531E50-B2E9-FB09-557E-DA6D5FC18864" referredColumn="6455BD23-E7E8-58B6-F760-860A3CB7BCE8"/>
+</associations>
+</Column>
+<Column name="NOME" id="E0AE4998-5BD2-85FC-EE57-90ED59F2DDD3">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>COLUNA</sourceObjSchema>
+<sourceObjName>NOME</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Nome da coluna (idêntico ao banco)</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSICAO" id="17A1D79E-2024-B934-9CE3-E1A9C6B59BE6">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>COLUNA</sourceObjSchema>
+<sourceObjName>POSICAO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Posição/ordem da coluna na tabela.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO" id="024DAEDB-E4E6-8FF1-BB20-272D8FD962B8">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>COLUNA</sourceObjSchema>
+<sourceObjName>TIPO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Tipo de dado</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TAMANHO" id="6EB1C8FF-773C-1D5A-DBDA-4570D0BFC07A">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>COLUNA</sourceObjSchema>
+<sourceObjName>TAMANHO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Tamanho</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECISAO" id="1EAF43E5-A82B-3393-33A8-61BD55DED4E6">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>COLUNA</sourceObjSchema>
+<sourceObjName>PRECISAO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Precisão</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBRIGATORIO" id="3E83800B-21F8-0697-B3B0-21ED0E9CEC53">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>COLUNA</sourceObjSchema>
+<sourceObjName>OBRIGATORIO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Indica a obrigatoriedade da coluna (S/N)</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<constraintName>CK_OBRIGATORIO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESCALA" id="F208CC0C-591B-97A9-F29E-2EE038907C39">
+<createdBy>rgil</createdBy>
+<createdTime>2015-05-14 17:19:19 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF5E04E5-77C0-823D-29E9-B15C3CC0A1FF" name="PK_COLUNA">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>PK_COLUNA</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E87AEBD6-8756-D889-4B21-803622330C9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA9716CB-0623-58F7-07E4-23726F9E1FC4" name="UN_COLUNA">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>UN_COLUNA</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34D4BCA3-CCD4-0008-0191-CBF866427151"/>
+<colUsage columnID="E0AE4998-5BD2-85FC-EE57-90ED59F2DDD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24B823B4-CAB5-2EC7-E0FB-A89FFCEC757F" name="FK_COLUNA_TABELA">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34D4BCA3-CCD4-0008-0191-CBF866427151"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

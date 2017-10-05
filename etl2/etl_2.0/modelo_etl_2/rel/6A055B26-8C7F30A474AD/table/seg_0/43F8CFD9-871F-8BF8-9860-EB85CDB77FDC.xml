@@ -1,0 +1,215 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43F8CFD9-871F-8BF8-9860-EB85CDB77FDC" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="HISTORICO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 11:44:45 UTC</createdTime>
+<commentInRDBMS>Tabela de histórico de execução dos projetos.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<ordsAlias>projeto_historico</ordsAlias>
+<abbreviation>PROJ_HIST</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_HISTORICO" id="47A23B68-9826-DA8F-3260-68C95DD81754">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 11:45:35 UTC</createdTime>
+<commentInRDBMS>Chave primária</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_PROJETO" id="DB1BF58F-709A-1AC7-3DA3-12CA97222994">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 11:45:11 UTC</createdTime>
+<commentInRDBMS>Chave do projeto</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2DF76AE3-C0EA-870A-E3AA-BB8C181A62EF" referredColumn="474AE39F-E927-D7E4-A27D-B34C3F196A79"/>
+</associations>
+</Column>
+<Column name="COD_USUARIO_PERFIL" id="B6A45B80-D537-3B5A-4BFF-1C0246C6365D">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 17:09:26 UTC</createdTime>
+<commentInRDBMS>Perfil do usuário que está executando</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_US_PERF</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97D6C4F5-E88F-F66B-1269-439220C1C288" referredColumn="EFFA3928-0507-E7A6-F62B-7CA18D2C7CF1"/>
+</associations>
+</Column>
+<Column name="NOME_ARQUIVO" id="D27C316F-7724-5E37-EA74-E46190309250">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 17:12:40 UTC</createdTime>
+<commentInRDBMS>Nome do arquivo (diretório é definido na tabela externa)</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_INICIO" id="F3AA32DE-78CC-3B5C-7FA8-76F163CE84A4">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 17:14:46 UTC</createdTime>
+<commentInRDBMS>Data de início da execução.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_TERMINO" id="2DD4FC2B-BB9F-180F-3206-0FCB338B16B7">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 17:14:53 UTC</createdTime>
+<commentInRDBMS>Data que a execução terminou</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="DA1985D0-6242-0662-02C2-DFEE58321BB3">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 17:17:44 UTC</createdTime>
+<commentInRDBMS>Status de execução. AG = Agendado, ER = Erro, ES = Em Espera, EX = Em Execução, FI = Finalizado</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<constraintName>CK_HISTORICO_STATUS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="AG" description="AGENDADO"/>
+<valueDef value="ER" description="ERRO"/>
+<valueDef value="ES" description="EM ESPERA"/>
+<valueDef value="EX" description="EM EXECUCAO"/>
+<valueDef value="FI" description="FINALIZADO"/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MENSAGEM_STATUS" id="36496D0D-3B57-DCC3-7A13-2A55CC6B28F1">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 16:44:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOG_EXECUCAO" id="6FD99982-FA0E-7EB1-990B-29E12FE5D89C">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 16:44:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIDADE_ACESSO" id="A299DAD0-02F6-B79C-F79E-E729943BA583">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 16:58:18 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMPORTACAO_KML" id="AC3380CF-0974-1971-70BD-E6B74FB7558E">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 16:59:30 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<constraintName>CK_HISTORICO_KML</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<listOfValues>
+<valueDef value="N" description="NAO"/>
+<valueDef value="S" description="SIM"/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<abbreviation>IMP_KML</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2408F742-FD92-BFEE-BEC2-EDCBC71DC0AE" name="PK_HISTORICO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 11:45:11 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47A23B68-9826-DA8F-3260-68C95DD81754"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FBFC813-F752-EA4A-A516-0B308288C17B" name="FK_HISTORICO_US_PERF">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 17:11:57 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6A45B80-D537-3B5A-4BFF-1C0246C6365D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B0772DB-96FB-5ED7-16CD-69A7DF0B8657" name="FK_HISTORICO_PROJETO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 17:22:11 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB1BF58F-709A-1AC7-3DA3-12CA97222994"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

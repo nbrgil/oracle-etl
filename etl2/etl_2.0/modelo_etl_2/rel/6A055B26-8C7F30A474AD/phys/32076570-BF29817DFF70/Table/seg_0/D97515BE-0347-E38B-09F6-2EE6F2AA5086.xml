@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="PASSO" directorySegmentName="seg_0" id="D97515BE-0347-E38B-09F6-2EE6F2AA5086">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>03F3F654-3551-6608-C972-FA2D52B90E37</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_PASSO_COD_PROXIMO_PASSO_OK" id="0E885597-D215-9DAA-06F4-C55B735AFECE">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_PASSO_COD_INTERFACE" id="26573F78-BBF4-92A1-0E8D-CC76EA50BBB9">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_PASSO_COD_PROXIMO_PASSO_KO" id="2DE31598-87F8-2C01-E731-CBDA92E0897D">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_PASSO" id="4B605C6F-A955-CCC3-FFDC-3B024E0FCF47">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UN_PASSO" id="C549B664-8847-7501-9C50-03EF8AE1A58B">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_PASSO_COD_PACOTE" id="C55D64C7-102D-6D5F-C2F1-8EC08A4FCB33">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+</indexProxies>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COD_PACOTE" id="1C5EF3B8-A182-C6F5-26E4-67F3E54E6F57">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_INTERFACE" id="1DADDCCA-3C42-1A63-5EDB-E9AFDCB4EEF5">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_PASSO" id="63CEDD79-84A7-16A3-91F3-E3EE40DAE122">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOME" id="96DE1453-CB76-E609-019E-F65806546516">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_PROXIMO_PASSO_KO" id="BF06474C-F643-7B68-2176-F504890ACA31">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_PROXIMO_PASSO_OK" id="CBFEF777-FB2E-3291-8E53-DF5DB361C5EF">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSICAO" id="D9C60DCE-94ED-0E0B-5248-A0B271EF85E7">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PASSO_INTERFACE" id="56B988D0-2197-D485-3048-ED33E5FA115F">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PASSO_PASSO_KO" id="6E82C006-8E06-22EB-0910-0C4F2BE7C845">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PASSO_PASSO_OK" id="8F84FD1E-BAEB-F67B-C906-CB836CE12475">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PASSO_PACOTE" id="FB2EE179-D5D2-5E7B-67F7-BC5B9A104B70">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_PASSO" id="FF73177C-56D8-7F32-94CD-0834491BB24F">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+<existingIndex>4B605C6F-A955-CCC3-FFDC-3B024E0FCF47</existingIndex>
+<indexSegment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UN_PASSO" id="8BF046D5-6C62-4C26-E9A3-E0661B6B59AA">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+<existingIndex>C549B664-8847-7501-9C50-03EF8AE1A58B</existingIndex>
+<indexSegment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A9B8CD16-14A9-90FF-1EA6-8F00F4EEF373" name="FK_PASSO_INTERFACE">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>FK_PASSO_INTERFACE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<containerWithKeyObject>D97515BE-0347-E38B-09F6-2EE6F2AA5086</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>56B988D0-2197-D485-3048-ED33E5FA115F</localFKIndex>
+<keyObject>4BE91D39-1961-971E-7F34-2D1B43577324</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

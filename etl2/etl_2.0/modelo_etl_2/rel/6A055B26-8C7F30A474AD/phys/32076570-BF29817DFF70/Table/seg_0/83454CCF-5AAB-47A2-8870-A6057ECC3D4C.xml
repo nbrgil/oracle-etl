@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="PACOTE" directorySegmentName="seg_0" id="83454CCF-5AAB-47A2-8870-A6057ECC3D4C">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>03F3F654-3551-6608-C972-FA2D52B90E37</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_PACOTE" id="55A7BE27-7EA3-0D53-8744-5A971421B936">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_PACOTE_COD_PROJETO" id="A588D722-44E6-C21B-4587-40385B28650A">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UN_PACOTE" id="D06B3257-387C-FFC2-7272-C9F24189A5CD">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+</indexProxies>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COD_PROJETO" id="004F7424-DA47-6FE3-FDF4-63093F968DDF">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_PACOTE" id="474AE39F-E927-D7E4-A27D-B34C3F196A79">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOME" id="56891E09-C3D0-2991-B023-FD2DA9CB20C1">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PACOTE_PROJETO" id="A9AEBDF2-035D-CA2C-4ECB-02F73B220B8B">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_PACOTE" id="C63F63A9-DCF4-59CB-8223-90FF0B33218F">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+<existingIndex>55A7BE27-7EA3-0D53-8744-5A971421B936</existingIndex>
+<indexSegment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UN_PACOTE" id="9AF5717B-4F55-5E4E-9216-9C6D8F212273">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+<existingIndex>D06B3257-387C-FFC2-7272-C9F24189A5CD</existingIndex>
+<indexSegment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

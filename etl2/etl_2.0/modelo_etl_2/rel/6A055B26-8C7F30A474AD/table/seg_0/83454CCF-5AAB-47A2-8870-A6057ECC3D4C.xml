@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="83454CCF-5AAB-47A2-8870-A6057ECC3D4C" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="PROJETO">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>PACOTE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Tabela de empacotamento das interfaces</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<beforeCreate>GRANT REFERENCES ON ADMIN.EMPRESA TO ETL2;&lt;br/&gt;&lt;br/&gt;CREATE GLOBAL TEMPORARY TABLE etl2.interface_ddl&lt;br/&gt;(&lt;br/&gt;   COD_INTERFACE NUMBER,&lt;br/&gt;   COD_HISTORICO NUMBER,&lt;br/&gt;   LINHA NUMBER,&lt;br/&gt;   CMD_SQL CLOB&lt;br/&gt;) ON COMMIT PRESERVE ROWS ;&lt;br/&gt;;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;ALTER TABLE ETL2.INTERFACE_DDL ADD CONSTRAINT PK_INTERFACE_DDL PRIMARY KEY (&lt;br/&gt;COD_INTERFACE ) ;&lt;br/&gt;</beforeCreate>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PROJETO" id="474AE39F-E927-D7E4-A27D-B34C3F196A79">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>PACOTE</sourceObjSchema>
+<sourceObjName>COD_PACOTE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Chave primária</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="56891E09-C3D0-2991-B023-FD2DA9CB20C1">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>PACOTE</sourceObjSchema>
+<sourceObjName>NOME</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Nome do projeto</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRICAO" id="BBAA83E8-4ED1-1FD2-7CF5-A29FF382E555">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-04 15:21:26 UTC</createdTime>
+<commentInRDBMS>Descrição</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_EMPRESA" id="B8D241AB-CD7E-AE1F-995E-B3482873210B">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-04 15:20:26 UTC</createdTime>
+<commentInRDBMS>Empresa </commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AAB3D546-53F7-A145-DCC9-9EA0C22F35FF" referredColumn="A0D25F09-971B-BF78-700F-43C38E23B6E6"/>
+</associations>
+</Column>
+<Column name="DATA_CADASTRO" id="9A571614-15B6-F4D3-B5C2-E1D25362EEA8">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-04 15:20:57 UTC</createdTime>
+<commentInRDBMS>Data de cadastro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_ALTERACAO" id="E8C40158-8708-FCC1-6149-25C4C8C2E328">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-04 15:21:08 UTC</createdTime>
+<commentInRDBMS>Data de alteração</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRETORIO" id="010BEA25-D9B8-9D72-940B-9C6CD0133A2A">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-12 14:02:24 UTC</createdTime>
+<commentInRDBMS>Diretório dos logs e tabelas externas.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SQL_REVERSO" id="62A5431D-3E3B-100D-3A43-4DD9EEB76488">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-12 14:10:44 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QTDE_LINHAS_MAXIMO" id="D3F066E1-9671-BE67-BCA8-E51E14864633">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-27 22:20:18 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C63F63A9-DCF4-59CB-8223-90FF0B33218F" name="PK_PROJETO">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>PK_PACOTE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="474AE39F-E927-D7E4-A27D-B34C3F196A79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AF5717B-4F55-5E4E-9216-9C6D8F212273" name="UN_PROJETO">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>UN_PACOTE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56891E09-C3D0-2991-B023-FD2DA9CB20C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44792008-30DF-9D56-20D0-0CC79557AF7A" name="FK_PROJETO_EMPRESA">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-04 15:25:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8D241AB-CD7E-AE1F-995E-B3482873210B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

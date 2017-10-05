@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E58CA2F-7FCE-524B-178F-50CF57EEF7D6" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="TRANSFORMACAO_PARAMETRO">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>TRANSFORMACAO_PARAMETRO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Usado para parâmetros não baseados em colunas</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<abbreviation>TRANSF_PARAM</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_TRANSFORMACAO_PARAMETRO" id="C0A6275A-29C9-29D8-19C5-4840308675AE">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>TRANSFORMACAO_PARAMETRO</sourceObjSchema>
+<sourceObjName>COD_TRANSFORMACAO_PARAMETRO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Chave primária</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_TRANSFORMACAO" id="87CDC76D-76EC-64E2-8789-A947685AF228">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>TRANSFORMACAO_PARAMETRO</sourceObjSchema>
+<sourceObjName>COD_TRANSFORMACAO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Transformação</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_TRANSF</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AF21132-9887-CFE6-1C27-41601FB790F7" referredColumn="6D0B673D-0728-7E71-38A8-3DE4A5F3348A"/>
+</associations>
+</Column>
+<Column name="TEXTO_PARAMETRO" id="99B54693-3217-3D2B-EAF7-A2F647E269D9">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>TRANSFORMACAO_PARAMETRO</sourceObjSchema>
+<sourceObjName>TEXTO_PARAMETRO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Texto de substituição do parâmetro</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSICAO" id="12442444-EC7A-C93D-688D-C286E5AD24AE">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>TRANSFORMACAO_PARAMETRO</sourceObjSchema>
+<sourceObjName>POSICAO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Ordem</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FA6033D3-D941-3B49-9A99-67C9812A56D7" name="PK_TRANSFORMACAO_PARAMETRO">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>PK_TRANSFORMACAO_PARAMETRO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0A6275A-29C9-29D8-19C5-4840308675AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="976C2148-59BC-E54F-4F0B-C8650B939199" name="UN_TRANSFORMACAO_PARAMETRO">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>UN_TRANSFORMACAO_PARAMETRO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87CDC76D-76EC-64E2-8789-A947685AF228"/>
+<colUsage columnID="12442444-EC7A-C93D-688D-C286E5AD24AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75FED125-1266-9279-F2A4-AE7F6DC74815" name="FK_TRANSFORMACAO_PARAM_TRANSF">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87CDC76D-76EC-64E2-8789-A947685AF228"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

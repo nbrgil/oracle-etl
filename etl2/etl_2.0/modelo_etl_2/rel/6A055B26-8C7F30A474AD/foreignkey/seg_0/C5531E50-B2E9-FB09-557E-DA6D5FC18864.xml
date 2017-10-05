@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C5531E50-B2E9-FB09-557E-DA6D5FC18864" name="FK_COLUNA_TABELA">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>FK_COLUNA_TABELA</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<containerWithKeyObject>3E24CB03-F22B-A18A-3E5E-B3D626BB7D2C</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>24B823B4-CAB5-2EC7-E0FB-A89FFCEC757F</localFKIndex>
+<keyObject>50F8906B-6BAC-C115-0B71-880926245659</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

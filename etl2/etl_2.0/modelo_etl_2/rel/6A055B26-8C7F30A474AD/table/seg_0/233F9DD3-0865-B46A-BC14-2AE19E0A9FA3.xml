@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="233F9DD3-0865-B46A-BC14-2AE19E0A9FA3" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="INTERFACE_PROCESSAMENTO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 14:40:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<abbreviation>INTF_PROC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_INTERFACE" id="BF8554C9-3B5C-28AD-ED28-03FE8FD9AAB9">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 14:40:35 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="756F5CAD-8CF4-9DA8-626B-38EDA0ACC6C9" referredColumn="E2385301-2BBC-D945-0AE1-00D607460984"/>
+</associations>
+</Column>
+<Column name="ESQUEMA" id="6B22316A-2876-2F5F-5B42-D9CD9D0EAD43">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 16:40:41 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_PROCEDIMENTO" id="51D21454-B2C5-7890-1268-571C7560D445">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 16:42:58 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="666CFE67-3D0F-86EE-89C4-54866D190C9C" name="PK_INTERFACE_PROCESSAMENTO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 14:40:35 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF8554C9-3B5C-28AD-ED28-03FE8FD9AAB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CC45D4A-576B-3BBC-4A14-C35B4D4B5EEB" name="FK_INTERFACE_PROC_INTF">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 16:47:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF8554C9-3B5C-28AD-ED28-03FE8FD9AAB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

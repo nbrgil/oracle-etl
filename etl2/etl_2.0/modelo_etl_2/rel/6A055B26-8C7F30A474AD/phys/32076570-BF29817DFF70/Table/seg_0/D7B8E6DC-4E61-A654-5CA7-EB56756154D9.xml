@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="INTERFACE" directorySegmentName="seg_0" id="D7B8E6DC-4E61-A654-5CA7-EB56756154D9">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>03F3F654-3551-6608-C972-FA2D52B90E37</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_INTERFACE_COD_TABELA_ALVO" id="535A2A05-88F0-8846-5916-9A14D8465A9E">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_INTERFACE" id="5F743049-E309-1A98-B027-A5491E8C642D">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UN_INTERFACE" id="86612810-CCBF-5834-5C5B-B0E961290517">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_INTERFACE_COD_PROJETO" id="DA971F72-90E0-95D6-637F-28536CBA8F3C">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+</indexProxies>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COD_PROJETO" id="063BE46C-382F-4496-BFA0-38F3B3663E37">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_TABELA_ALVO" id="071BA451-90DD-C138-59E1-07E4C2D8D061">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTRATEGIA_DETECCAO" id="1119C824-C9B6-CC41-2943-2E7695774DF1">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOME" id="1754D815-ED7C-1208-96C0-019C3287C7F8">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_ALTERACAO" id="73BF2F1D-A440-CC6A-30E1-D9840714BF4B">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EXCLUIR_TUDO_DML" id="79E264EB-5A31-F724-8501-83C3CB4B210C">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTRATEGIA_ATUALIZACAO" id="A391C43C-583B-6182-739C-9E20DE8028B6">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_CADASTRO" id="A7D7F6A1-FF85-A74A-B537-06647F468B0F">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EXCLUIR_TUDO_DDL" id="A9876D6D-E97D-01E6-60DC-D420D2377DEE">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SOMENTE_DISTINTOS" id="BE32454C-E5AE-2744-67A7-4268D4639CA9">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_INTERFACE" id="E2385301-2BBC-D945-0AE1-00D607460984">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONFIRMAR_ALTERACOES" id="E3BB66E3-AA4E-7284-C008-757595A4FF5A">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_INTERFACE_PROJETO" id="03AF8302-EEF6-3EFE-B0A6-5F0A886016CC">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_INTERFACE_TABELA" id="7C8D667E-B0AE-3598-329B-D5849DDC456E">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_INTERFACE" id="4BE91D39-1961-971E-7F34-2D1B43577324">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+<existingIndex>5F743049-E309-1A98-B027-A5491E8C642D</existingIndex>
+<indexSegment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UN_INTERFACE" id="F7133389-BAE5-916F-D32E-0F564E560801">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+<existingIndex>86612810-CCBF-5834-5C5B-B0E961290517</existingIndex>
+<indexSegment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="06D6812F-BB1B-CBDE-A5EB-0B55C1841B1C" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="HISTORICO_EXPORTACAO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-12 21:02:39 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<abbreviation>HIST_EXPORT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_HISTORICO" id="4DBD273A-C73C-885C-0DA8-F1A1D90F1859">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-12 21:03:06 UTC</createdTime>
+<commentInRDBMS>Chave primária</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_HIST</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7C11660-F6C0-543A-6306-B71B14AB79E5" referredColumn="47A23B68-9826-DA8F-3260-68C95DD81754"/>
+</associations>
+</Column>
+<Column name="DADOS_REMOVIDOS" id="90BDF4D0-706C-31BA-E58E-CDCB7DCB7208">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-12 21:05:32 UTC</createdTime>
+<commentInRDBMS>Dados foram removidos? S = Sim, N = Não</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<constraintName>CK_HISTORICO_EXP_REMOVE</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<listOfValues>
+<valueDef value="N" description="NAO"/>
+<valueDef value="S" description="SIM"/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0F63972-7C8D-0143-6814-AEE1F0529243" name="PK_HISTORICO_EXPORTACAO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-12 21:03:06 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DBD273A-C73C-885C-0DA8-F1A1D90F1859"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C75D312-6E1D-C2A5-38DC-A883AFA4F3CD" name="FK_HISTORICO_EXPORT_HIST">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:20:29 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DBD273A-C73C-885C-0DA8-F1A1D90F1859"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

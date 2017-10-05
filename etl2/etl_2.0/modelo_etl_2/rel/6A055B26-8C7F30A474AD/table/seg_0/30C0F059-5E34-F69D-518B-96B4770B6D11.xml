@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30C0F059-5E34-F69D-518B-96B4770B6D11" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="LOG_TIPO_MENSAGEM">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:39:21 UTC</createdTime>
+<commentInRDBMS>Tabela de mensagens. Contém o código e um nome único para ser representado no código. </commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_TIPO_MENSAGEM" id="28703137-D499-65A8-555B-D65E0706BA63">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:39:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="AFFE44E4-1235-C20B-9B94-CAE2D03F8ABF">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:40:25 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORA_SQLCODE" id="89A4A575-E5D0-BDAB-B816-190250C72D2D">
+<createdBy>rgil</createdBy>
+<createdTime>2015-09-21 12:21:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXPR_REGULAR_VALIDACAO" id="D310920E-D4CA-F66F-BF56-5125EEAF59B3">
+<createdBy>rgil</createdBy>
+<createdTime>2015-09-21 12:21:44 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FILTRO_VALIDACAO" id="A150F759-EE39-5121-2474-4E0F081BA27F">
+<createdBy>rgil</createdBy>
+<createdTime>2015-09-21 12:21:57 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89ED3D4F-FC00-D001-A1A9-0D79A2B4C8C0" name="PK_LOG_MENSAGEM">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:41:33 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28703137-D499-65A8-555B-D65E0706BA63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96C832E2-6B54-A408-A5F2-8A89CE269683" name="UN_LOG_TIPO_MENSAGEM">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 13:06:44 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFFE44E4-1235-C20B-9B94-CAE2D03F8ABF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

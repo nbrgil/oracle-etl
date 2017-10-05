@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DFCC8FD9-C579-6599-5CB8-B2D8896C9875" containerWithKeyObject="A68F5EB0-1DD4-EDF6-71D3-B7E3DF1D6E9D" localFKIndex="597EE0E6-0032-66B9-6885-1668F7AB0D90" name="FK_MAPEAMENTO_INTF_IMPORT">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>FK_MAPEAMENTO_INTERFACE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D8713B75-233C-CCA7-CCDA-F307A83475D1</referredTableID>
+<keyObject>D3ADE091-2FD5-EB9C-4F47-4B3CCBE333A4</keyObject>
+<referredKeyID>D3ADE091-2FD5-EB9C-4F47-4B3CCBE333A4</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

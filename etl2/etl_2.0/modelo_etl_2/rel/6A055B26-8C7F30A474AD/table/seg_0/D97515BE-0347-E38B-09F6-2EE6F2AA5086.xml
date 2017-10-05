@@ -1,0 +1,277 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D97515BE-0347-E38B-09F6-2EE6F2AA5086" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="PASSO">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>PASSO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Define os passos de execução de um projeto.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PASSO" id="63CEDD79-84A7-16A3-91F3-E3EE40DAE122">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>PASSO</sourceObjSchema>
+<sourceObjName>COD_PASSO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Chave primária</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_PROJETO" id="1C5EF3B8-A182-C6F5-26E4-67F3E54E6F57">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>PASSO</sourceObjSchema>
+<sourceObjName>COD_PACOTE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Projeto onde esse passo está contido.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>PROJ</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F55299F-AB74-28DF-B5C4-7A869212AA86" referredColumn="474AE39F-E927-D7E4-A27D-B34C3F196A79"/>
+</associations>
+</Column>
+<Column name="COD_INTERFACE" id="1DADDCCA-3C42-1A63-5EDB-E9AFDCB4EEF5">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>PASSO</sourceObjSchema>
+<sourceObjName>COD_INTERFACE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Interface que será executada nesse passo.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>INTF</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9B8CD16-14A9-90FF-1EA6-8F00F4EEF373" referredColumn="E2385301-2BBC-D945-0AE1-00D607460984"/>
+</associations>
+</Column>
+<Column name="NOME" id="96DE1453-CB76-E609-019E-F65806546516">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>PASSO</sourceObjSchema>
+<sourceObjName>NOME</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Nome do passo.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_PROXIMO_PASSO_OK" id="CBFEF777-FB2E-3291-8E53-DF5DB361C5EF">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>PASSO</sourceObjSchema>
+<sourceObjName>COD_PROXIMO_PASSO_OK</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Código do próximo passo em caso de sucesso.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2B56F173-FD0F-308B-FB26-22137BBA7AD8" referredColumn="63CEDD79-84A7-16A3-91F3-E3EE40DAE122"/>
+</associations>
+</Column>
+<Column name="COD_PROXIMO_PASSO_KO" id="BF06474C-F643-7B68-2176-F504890ACA31">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>PASSO</sourceObjSchema>
+<sourceObjName>COD_PROXIMO_PASSO_KO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Código do próximo passo em caso de falha.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A20D6189-8F84-2475-3D31-D10BED94769A" referredColumn="63CEDD79-84A7-16A3-91F3-E3EE40DAE122"/>
+</associations>
+</Column>
+<Column name="PRIMEIRO_PASSO" id="11A25725-7793-14F0-084E-572052888C87">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-24 18:39:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<constraintName>CK_PASSO_PRIM_PASSO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<listOfValues>
+<valueDef value="N" description="NAO"/>
+<valueDef value="S" description="SIM"/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GERAR_LOG" id="232AFF33-2F64-0E82-FC01-333711EA5228">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-24 17:56:13 UTC</createdTime>
+<commentInRDBMS>Define se esse passo deve gerar log.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<constraintName>CK_PASSO_GERAR_LOG</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<listOfValues>
+<valueDef value="N" description="NAO"/>
+<valueDef value="S" description="SIM"/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARTICIPA_ATUALIZACAO" id="CA34D6C8-C401-929B-C73B-BFFE77E74E56">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-30 17:28:28 UTC</createdTime>
+<commentInRDBMS>Define se esse passo participa da atualização</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<constraintName>CK_PASSO_PART_ATUAL</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="NAO"/>
+<valueDef value="S" description="SIM"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARTICIPA_EXCLUSAO" id="D2CF88CC-B9EB-B3A2-8D82-FF6BDC15DD3A">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-30 17:30:00 UTC</createdTime>
+<commentInRDBMS>Define se esse passo participa da exclusão.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<constraintName>CK_PASSO_PART_EXCLUSAO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="NAO"/>
+<valueDef value="S" description="SIM"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF73177C-56D8-7F32-94CD-0834491BB24F" name="PK_PASSO">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>PK_PASSO</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63CEDD79-84A7-16A3-91F3-E3EE40DAE122"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="374A8FAE-6D55-1D26-01B3-5C6CE9D8DBC5" name="UN_PASSO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-04 17:14:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C5EF3B8-A182-C6F5-26E4-67F3E54E6F57"/>
+<colUsage columnID="1DADDCCA-3C42-1A63-5EDB-E9AFDCB4EEF5"/>
+<colUsage columnID="96DE1453-CB76-E609-019E-F65806546516"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56B988D0-2197-D485-3048-ED33E5FA115F" name="FK_PASSO_INTERFACE">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DADDCCA-3C42-1A63-5EDB-E9AFDCB4EEF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E82C006-8E06-22EB-0910-0C4F2BE7C845" name="FK_PASSO_PASSO_KO">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF06474C-F643-7B68-2176-F504890ACA31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F84FD1E-BAEB-F67B-C906-CB836CE12475" name="FK_PASSO_PASSO_OK">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBFEF777-FB2E-3291-8E53-DF5DB361C5EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29FF78E5-3D77-843B-FB01-537EBBE9DA0A" name="FK_PASSO_PROJETO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-04 15:29:13 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C5EF3B8-A182-C6F5-26E4-67F3E54E6F57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

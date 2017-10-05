@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="SchemaObject" objectID="4B0E0566-8F16-A105-16FA-D661A6A5E835" name="ETL" seqName="seg_0"/>
+   <object objectType="Table" objectID="187FE7C0-352D-496E-44BB-60F87C32E9CE" name="PROJETO" seqName="seg_0"/>
+   <object objectType="Table" objectID="1B4EBC21-45B3-B3F3-A315-DCB00A091FCF" name="TABELA_EXTERNA" seqName="seg_0"/>
+   <object objectType="Table" objectID="2B5DC923-3972-4513-2102-BB43A5BB9714" name="COLUNA" seqName="seg_0"/>
+   <object objectType="Table" objectID="616ADFA4-7B7E-52FF-C72E-679B80CAE51A" name="PACOTE" seqName="seg_0"/>
+   <object objectType="Table" objectID="A5484FF6-C200-CE0E-C2C6-3F44FBEF0FA4" name="TABELA" seqName="seg_0"/>
+   <object objectType="Table" objectID="B52CB0F7-2973-EEAC-2F44-F0538178195E" name="TRANSFORMACAO_TEXTO" seqName="seg_0"/>
+   <object objectType="Table" objectID="CA6856FB-DFFE-8037-4F87-9AEA105B5BAF" name="PASSO" seqName="seg_0"/>
+   <object objectType="Table" objectID="CADF6EE7-2CCE-E188-E327-C71EC1EC1731" name="INTERFACE" seqName="seg_0"/>
+   <object objectType="Table" objectID="F3D5059D-B387-1EEE-12AA-27939C34F6B3" name="ADMIN.EMPRESA" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0DB1B739-3639-EA38-413D-5597AB7C1D2E" name="FK_PASSO_PASSO_OK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="10144F48-A3E8-1D8A-7EFE-B13D0BD78CAE" name="FK_PASSO_PACOTE" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="2BF12CBE-BBE8-1DE6-6D35-13F8B6006E33" name="FK_TABELA_EXTERNA_TABELA" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="38474E38-27BC-AF93-0F8F-CD6D6AED2A2E" name="FK_TABELA_PROJETO" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="703E382F-A90F-7685-DDDF-31DAB2723343" name="FK_PASSO_PASSO_KO" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="89A0A9CD-F280-F0B0-1239-BF59B0B47595" name="FK_INTERFACE_TABELA" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9D1FA51C-4A19-A126-A9AD-25D143088C13" name="FK_PROJETO_EMPRESA" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="BB9AF2C8-A509-9C0B-CF08-5D5896D99A01" name="FK_COLUNA_TABELA" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C1420F30-70CD-2BBD-D3F7-14DEEB295208" name="FK_PASSO_INTERFACE" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

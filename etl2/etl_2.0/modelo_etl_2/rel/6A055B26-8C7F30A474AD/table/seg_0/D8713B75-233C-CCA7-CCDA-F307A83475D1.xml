@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8713B75-233C-CCA7-CCDA-F307A83475D1" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="INTERFACE_IMPORTACAO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 14:32:08 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<abbreviation>INTF_IMPORT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_INTERFACE" id="C7F0FFED-EFE6-B617-38EF-C9B4BD0317CD">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 14:34:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17ADDF67-9940-4B48-3AD2-ECDBF7EA7B00" referredColumn="E2385301-2BBC-D945-0AE1-00D607460984"/>
+</associations>
+</Column>
+<Column name="EXCLUIR_TUDO_DML" id="3AA662A3-20DC-5F0B-9DB1-8D1B7B47C38D">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 16:50:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXCLUIR_TUDO_DDL" id="7761A2E2-59DD-D211-100B-C7CB5D52B700">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 16:51:03 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOMENTE_DISTINTOS" id="686E78CF-FE68-3B11-F5FA-9789078BF3CE">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 16:51:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTRATEGIA_DETECCAO" id="7D766F47-98EE-7955-8FE1-ADFB5C6C9AC7">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 16:52:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTRATEGIA_ATUALIZACAO" id="D710793D-D743-7372-496E-A1209133BF15">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 16:52:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3ADE091-2FD5-EB9C-4F47-4B3CCBE333A4" name="PK_INTERFACE_IMPORTACAO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 14:34:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7F0FFED-EFE6-B617-38EF-C9B4BD0317CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="716D02C4-4DC6-B0E7-F0CC-D8198F0B549B" name="FK_INTERFACE_IMPORT_INTF">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 14:38:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7F0FFED-EFE6-B617-38EF-C9B4BD0317CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

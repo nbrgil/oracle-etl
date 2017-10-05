@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TABELA_EXTERNA" directorySegmentName="seg_0" id="502AC323-F6FA-FA53-659B-A8582F191513">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>03F3F654-3551-6608-C972-FA2D52B90E37</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_TABELA_EXTERNA_COD_TABELA" id="C897355B-E38C-B470-3022-5E4F5DAC8662">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+</IndexProxy>
+</indexProxies>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FORMATO_ARQUIVO" id="6797B665-E882-CE83-2E2C-3B4D002339FA">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QTDE_LINHA_CABECALHO" id="6C965461-B105-787A-C021-0B04558D01D5">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_TABELA" id="8947A25B-197C-5EC5-F8DB-4DD35C10292D">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LIMITADOR_COLUNA" id="9B104779-B336-B991-E153-A7746FA9A5BE">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LIMITADOR_LINHA" id="AAF86D2B-193E-9840-BF5C-8508206C5312">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIRETORIO" id="D1C9C579-1618-E192-5947-D90544D516D3">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_TABELA_EXTERNA_TABELA" id="D2DD8188-8571-7082-F6DB-DBE57260D737">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_TABELA_EXTERNA" id="8A4368CD-9F17-2975-D6CC-B842FA3BE786">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<segment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</segment>
+<tableSpace>72E327B2-DD24-A701-D835-D8996BE5ADF6</tableSpace>
+<existingIndex>C897355B-E38C-B470-3022-5E4F5DAC8662</existingIndex>
+<indexSegment>9B79E6D5-C4DA-E20C-2AEC-227F7063E850</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

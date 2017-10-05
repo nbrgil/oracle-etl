@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>
+   <object objectType="TSpace" objectID="72E327B2-DD24-A701-D835-D8996BE5ADF6" name="ONMAPS" seqName="seg_0"/>
+   <object objectType="User" objectID="FB84B566-7AB9-547C-B44E-F76C0489D718" name="ETL2" seqName="seg_0"/>
+   <object objectType="User" objectID="MDSYS" name="MDSYS" seqName="seg_0"/>
+   <object objectType="User" objectID="PUBLIC" name="PUBLIC" seqName="seg_0"/>
+   <object objectType="SType" objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" name="SDO_GEOMETRY" seqName="seg_0"/>
+   <object objectType="SType" objectID="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" name="XMLTYPE" seqName="seg_0"/>
+   <object objectType="Table" objectID="3E24CB03-F22B-A18A-3E5E-B3D626BB7D2C" name="COLUNA" seqName="seg_0"/>
+   <object objectType="Table" objectID="502AC323-F6FA-FA53-659B-A8582F191513" name="TABELA_EXTERNA" seqName="seg_0"/>
+   <object objectType="Table" objectID="5E58CA2F-7FCE-524B-178F-50CF57EEF7D6" name="TRANSFORMACAO_PARAMETRO" seqName="seg_0"/>
+   <object objectType="Table" objectID="6D09FBAB-6E6D-4E41-E024-6F5D63E6FF02" name="TRANSFORMACAO" seqName="seg_0"/>
+   <object objectType="Table" objectID="83454CCF-5AAB-47A2-8870-A6057ECC3D4C" name="PACOTE" seqName="seg_0"/>
+   <object objectType="Table" objectID="A68F5EB0-1DD4-EDF6-71D3-B7E3DF1D6E9D" name="MAPEAMENTO" seqName="seg_0"/>
+   <object objectType="Table" objectID="C6F9149C-53B0-646E-8DA0-F3DC5A4D3BA2" name="INTERFACE_TABELA_FONTE" seqName="seg_0"/>
+   <object objectType="Table" objectID="D7B8E6DC-4E61-A654-5CA7-EB56756154D9" name="INTERFACE" seqName="seg_0"/>
+   <object objectType="Table" objectID="D8C61C19-2589-9577-4DC4-0DCD459FF302" name="TRANSFORMACAO_TEXTO" seqName="seg_0"/>
+   <object objectType="Table" objectID="D97515BE-0347-E38B-09F6-2EE6F2AA5086" name="PASSO" seqName="seg_0"/>
+   <object objectType="Table" objectID="D9879FCF-EE46-7724-6709-611632594B06" name="TRANSFORMACAO_COLUNA" seqName="seg_0"/>
+   <object objectType="Table" objectID="E3B6E874-A2A7-0B7F-80A8-A64AA47A3676" name="PROJETO" seqName="seg_0"/>
+   <object objectType="Table" objectID="EE7CE141-20BC-E71C-4123-7B826E04381B" name="TABELA" seqName="seg_0"/>
+   <object objectType="Segment" objectID="03F3F654-3551-6608-C972-FA2D52B90E37" name="Storage1" seqName="seg_0"/>
+   <object objectType="Segment" objectID="9B79E6D5-C4DA-E20C-2AEC-227F7063E850" name="Storage14" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>

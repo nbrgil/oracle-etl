@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E75A2BB2-FB9B-F932-EA9E-CE3F0EC8A105" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="LOG_NIVEL">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:40:38 UTC</createdTime>
+<commentInRDBMS>Cada nível de log representa um tipo de detalhamento nas mensagens</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_NIVEL" id="407FCF84-BA33-CCFB-B16A-A83FBB3986B8">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:41:02 UTC</createdTime>
+<commentInRDBMS>Chave primária</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRICAO" id="D26E0D43-33D9-3CA7-A1A0-0095BBAB14AC">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:47:29 UTC</createdTime>
+<commentInRDBMS>Descrição do nível</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C8B67678-E085-8035-AD2F-75D87DA168D1" name="PK_LOG_NIVEL">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-12 12:41:24 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="407FCF84-BA33-CCFB-B16A-A83FBB3986B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

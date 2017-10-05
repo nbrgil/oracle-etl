@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50753811-F64A-197B-49DC-32C7051C68E4" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="ENRIQUECIMENTO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-14 19:12:11 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<ordsAlias>table_25</ordsAlias>
+<abbreviation>ENRIQ</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_ENRIQUECIMENTO" id="AA5A6D08-9769-A862-CB8D-4D840EE328F1">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-14 19:14:30 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="6A1C89F9-0884-EB17-7C60-BC3EE1FD8A82">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-14 19:18:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESQUEMA" id="6849F2E6-8DAB-5288-AF75-3A604BA45F95">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-14 20:41:30 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_PROCEDIMENTO" id="7770618A-D407-F452-229A-8E9CAA0E5E9B">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-14 20:41:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D09716C-BFDF-FA6B-704E-68C7C9E9E166" name="PK_ENRIQUECIMENTO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-14 19:14:30 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA5A6D08-9769-A862-CB8D-4D840EE328F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE6E9B81-745B-B54B-978D-36FDCD3BDF83" name="UN_ENRIQUECIMENTO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-15 16:41:04 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A1C89F9-0884-EB17-7C60-BC3EE1FD8A82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

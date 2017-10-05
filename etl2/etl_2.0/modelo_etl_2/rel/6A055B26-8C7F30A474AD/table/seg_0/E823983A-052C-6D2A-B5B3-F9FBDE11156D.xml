@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E823983A-052C-6D2A-B5B3-F9FBDE11156D" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="EXCLUSAO_DADOS">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-29 20:07:52 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<ordsAlias>table_28</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PROJETO" id="84ABC7DB-4C79-2F6E-6EC4-9987086B37F6">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-29 20:09:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88F1890F-374F-C102-A505-BC823E94BAEE" referredColumn="474AE39F-E927-D7E4-A27D-B34C3F196A79"/>
+</associations>
+</Column>
+<Column name="ORDEM_EXECUCAO" id="ABD88A63-A736-1A85-A1CC-98856288CD99">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-29 20:09:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESQUEMA" id="7EF0F644-7C0C-20C3-AAA6-9EB333AED62F">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-29 20:09:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_PROCEDIMENTO" id="4E1858C4-18E6-D3D6-CE16-137B6B4E66F0">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-29 20:09:55 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48DD1057-0707-2497-B1C0-2DE64EEBDC3C" name="PK_EXCLUSAO_DADOS">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-29 20:09:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84ABC7DB-4C79-2F6E-6EC4-9987086B37F6"/>
+<colUsage columnID="ABD88A63-A736-1A85-A1CC-98856288CD99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D085FE01-AB19-D83D-4669-140DAE22D1E0" name="FK_EXCLUSAO_DADOS_PROJETO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-29 20:11:03 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84ABC7DB-4C79-2F6E-6EC4-9987086B37F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A2D90B16-A693-75F9-2290-66A273CB9C84" containerWithKeyObject="E284F8C9-F492-B977-6B05-5927907F770A" localFKIndex="A289EB05-025C-56C1-D6F4-7440E992C1D4" name="FK_INTERFACE_ENRIQUEC_COLUNA_INTERFACE_ENRIQUECIMENTO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-15 15:57:13 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CCA724C0-6AF2-8211-FA5F-1FF9BBA8CC81</referredTableID>
+<keyObject>A89B0076-514F-F41C-F917-168235E08B28</keyObject>
+<referredKeyID>A89B0076-514F-F41C-F917-168235E08B28</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

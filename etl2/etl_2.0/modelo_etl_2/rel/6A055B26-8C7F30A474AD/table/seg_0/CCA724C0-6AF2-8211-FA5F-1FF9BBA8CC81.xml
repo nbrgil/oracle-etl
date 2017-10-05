@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CCA724C0-6AF2-8211-FA5F-1FF9BBA8CC81" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="INTERFACE_ENRIQUECIMENTO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-15 14:19:15 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<ordsAlias>table_57</ordsAlias>
+<abbreviation>INTF_ENRIQ</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_INTERFACE_ENRIQUECIMENTO" id="A141E9C5-E53B-D2DA-E052-89C38C12EBA4">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-15 14:19:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_INTF_ENRIQ</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_ENRIQUECIMENTO" id="6DC2D385-B2AB-A679-5999-5C00E1694B37">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-15 14:20:00 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_ENRIQ</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3EFB13AE-84BC-2372-6495-26491F74278D" referredColumn="AA5A6D08-9769-A862-CB8D-4D840EE328F1"/>
+</associations>
+</Column>
+<Column name="COD_INTERFACE" id="3655A605-BD6C-36BF-454B-BCA0DC516481">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-15 14:20:16 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_INTF</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C08C187-56AF-3466-5F66-4806BD045DCD" referredColumn="E2385301-2BBC-D945-0AE1-00D607460984"/>
+</associations>
+</Column>
+<Column name="NOME" id="453079C8-8D20-E295-97CA-2F341B5FA9FF">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-22 17:13:59 UTC</createdTime>
+<commentInRDBMS>Nome (que vai aparecer no log)</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDEM" id="14F38CDB-5DCB-AADF-8939-C9D53371BA71">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-15 14:29:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATIVO" id="C390ABA3-7C04-27F7-1BDB-907243C34172">
+<createdBy>rgil</createdBy>
+<createdTime>2015-09-14 14:32:09 UTC</createdTime>
+<commentInRDBMS>Define se esse enriquecimento está ativo</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<constraintName>CK_INTF_ENRIQ_ATIVO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<usesDefaultValue>true</usesDefaultValue>
+<listOfValues>
+<valueDef value="N" description="NAO"/>
+<valueDef value="S" description="SIM"/>
+</listOfValues>
+<defaultValue>S</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A89B0076-514F-F41C-F917-168235E08B28" name="PK_INTERFACE_ENRIQUECIMENTO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-15 14:19:45 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A141E9C5-E53B-D2DA-E052-89C38C12EBA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0D5D168-99B8-F2AD-06E9-CA50A42D0F8E" name="UN_INTERFACE_ENRIQUECIMENTO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-15 14:50:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3655A605-BD6C-36BF-454B-BCA0DC516481"/>
+<colUsage columnID="14F38CDB-5DCB-AADF-8939-C9D53371BA71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3397AB5B-AB42-986E-E1BF-1FED4E8D3EDE" name="FK_INTERFACE_ENRIQ_ENRIQ">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-15 14:21:20 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DC2D385-B2AB-A679-5999-5C00E1694B37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC06A738-E7E9-1BC1-6B98-DF376C490A13" name="FK_INTERFACE_ENRIQ_INTF">
+<createdBy>rgil</createdBy>
+<createdTime>2015-07-15 14:21:40 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3655A605-BD6C-36BF-454B-BCA0DC516481"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

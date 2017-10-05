@@ -1,0 +1,201 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6F9149C-53B0-646E-8DA0-F3DC5A4D3BA2" name="INTERFACE_TABELA">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>INTERFACE_TABELA_FONTE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Relacionamento entre as interfaces e as tabelas.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<abbreviation>INTF_TAB</abbreviation>
+<schemaObject>6C32DCD9-5422-228E-952A-25A6EA88ED25</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_INTERFACE_TABELA" id="8D44301E-705E-BF97-8F4D-D140B0963EAC">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>INTERFACE_TABELA_FONTE</sourceObjSchema>
+<sourceObjName>COD_INTERFACE_TABELA_FONTE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Chave primária</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_INTERFACE" id="5DB65FFF-6FD0-1C83-5A69-AB3A7BD4611C">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>INTERFACE_TABELA_FONTE</sourceObjSchema>
+<sourceObjName>COD_INTERFACE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Referência com a interface</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<delegate>E2385301-2BBC-D945-0AE1-00D607460984</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E481A0D3-AF70-3855-EBF3-15F84B2ADC11" referredColumn="E2385301-2BBC-D945-0AE1-00D607460984"/>
+</associations>
+</Column>
+<Column name="COD_TABELA" id="94209F1F-2A26-A27C-05A9-3FC1C0EBA775">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>INTERFACE_TABELA_FONTE</sourceObjSchema>
+<sourceObjName>COD_TABELA_FONTE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Referência com a tabela</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<delegate>6455BD23-E7E8-58B6-F760-860A3CB7BCE8</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC64950D-5227-E43F-2B21-408035522191" referredColumn="6455BD23-E7E8-58B6-F760-860A3CB7BCE8"/>
+</associations>
+</Column>
+<Column name="ALIAS_TABELA" id="CCACF781-3118-AFD5-CF33-E4F14338C013">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>INTERFACE_TABELA_FONTE</sourceObjSchema>
+<sourceObjName>NOME_ALIAS</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:47 UTC</createdTime>
+<commentInRDBMS>Apelido da tabela</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_TABELA" id="F742924D-1D5E-C745-A708-AB855F58D27D">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-04 15:32:44 UTC</createdTime>
+<commentInRDBMS>Tipo de tabela, podendo ser F =Fonte ou A = Alvo</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSICAO" id="F56EDC2A-D97D-2CE3-3700-C29F7EBB74E1">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 12:35:43 UTC</createdTime>
+<commentInRDBMS>Posição (Ordem das tabelas no FROM)</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_TRANSFORMACAO_JOIN" id="88DF706B-8A9E-3C6F-9F42-49C4A03B4F39">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 14:55:21 UTC</createdTime>
+<commentInRDBMS>Referência a transformação que efetua o JOIN </commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<abbreviation>COD_TRANSF_JOIN</abbreviation>
+<delegate>6D0B673D-0728-7E71-38A8-3DE4A5F3348A</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="922EE151-9383-1F98-69B4-E5A4574AD2E6" referredColumn="6D0B673D-0728-7E71-38A8-3DE4A5F3348A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="968F0EAD-F04A-A597-47D9-0AB0473C9546" name="PK_INTERFACE_TABELA">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>PK_INTERFACE_TABELA_FONTE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D44301E-705E-BF97-8F4D-D140B0963EAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="769F51F4-5A87-6D45-FFEA-535022A75122" name="UN_INTERFACE_TABELA">
+<sourceConnName>rodrigo_gil_votuporanga</sourceConnName>
+<sourceObjSchema>ETL2</sourceObjSchema>
+<sourceObjName>UN_INTERFACE_TABELA_FONTE</sourceObjName>
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:54:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DB65FFF-6FD0-1C83-5A69-AB3A7BD4611C"/>
+<colUsage columnID="94209F1F-2A26-A27C-05A9-3FC1C0EBA775"/>
+<colUsage columnID="CCACF781-3118-AFD5-CF33-E4F14338C013"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9CE89D34-31B1-3B31-0EA0-6F9DDC710906" name="FK_INTF_TAB_INTERFACE">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 13:34:25 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="7EC9D11F-977D-D5D4-44BE-81BD0EA5D079" name="FK_INTF_TAB_INTERFACEv2">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 13:34:49 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94209F1F-2A26-A27C-05A9-3FC1C0EBA775"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0DE343CA-17FB-47DC-C85F-CF45163E1EFF" name="FK_INTF_TAB_TRANSFORMACAO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 14:55:43 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88DF706B-8A9E-3C6F-9F42-49C4A03B4F39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="933C0372-EF29-7ED5-C60A-C34230955AA4" name="FK_INTERFACE_TABELA_INTERFACE">
+<createdBy>mmartins</createdBy>
+<createdTime>2015-12-08 13:34:41 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DB65FFF-6FD0-1C83-5A69-AB3A7BD4611C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

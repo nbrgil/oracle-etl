@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="0477A94C-E76C-2AEF-EE44-6616A1F8C217" mainViewID="AE0B0801-83E9-7B6E-CB7B-698ED3B35B55">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:35:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

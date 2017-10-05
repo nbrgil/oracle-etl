@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5B4360A-85A9-4913-DBF5-A92735CE8825" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="HISTORICO_EXCLUSAO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:08:41 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<ordsAlias>table_23</ordsAlias>
+<abbreviation>HIST_EXCL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_HISTORICO" id="9339B636-AD13-381F-E52C-8B35D39A55DE">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:09:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_HIST</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1F4EDBE-3044-9CBC-D7BD-A42C10D4EB09" referredColumn="47A23B68-9826-DA8F-3260-68C95DD81754"/>
+</associations>
+</Column>
+<Column name="FILTRO" id="E1DDF1CD-8652-DC00-643E-4950E7568685">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:09:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A456162-216F-F61C-460A-83FC05BC088E" name="PK_HISTORICO_EXCLUSAO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:09:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9339B636-AD13-381F-E52C-8B35D39A55DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03F8A0EC-27C9-D703-6DFA-6B18B627602A" name="FK_HIST_EXCL_HISTOR">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:32:17 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9339B636-AD13-381F-E52C-8B35D39A55DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

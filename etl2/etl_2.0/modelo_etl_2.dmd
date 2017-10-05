@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo_etl_2" id="47B90BE6-D941-482B-5835-72E75B6A821C" version="3.5">
+<createdBy>rgil</createdBy>
+<createdTime>2014-11-26 16:35:38 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>47B90BE6-D941-482B-5835-72E75B6A821C</designId>
+</OSDM_Design>

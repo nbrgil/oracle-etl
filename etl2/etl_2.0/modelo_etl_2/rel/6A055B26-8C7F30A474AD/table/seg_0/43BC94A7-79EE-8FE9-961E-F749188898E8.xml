@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43BC94A7-79EE-8FE9-961E-F749188898E8" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="INTERFACE_TABELA_COLUNA">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 13:10:40 UTC</createdTime>
+<commentInRDBMS>Relacionamento entre colunas e uma interface.</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<abbreviation>INTF_TABCOL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_INTERFACE_TABELA_COLUNA" id="DF86126C-5958-74AE-A8B1-49E031712893">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 13:19:46 UTC</createdTime>
+<commentInRDBMS>Chave primária</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_INTF_TABCOL</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_INTERFACE_TABELA" id="BAC4111E-FB38-65DE-E2E6-7193DC9C61FA">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 13:11:12 UTC</createdTime>
+<commentInRDBMS>Relacionamento entre tabela e interface dessa coluna</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_INTF_TAB</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A83E6F4B-AA6F-C6CA-B716-CF05DC152645" referredColumn="8D44301E-705E-BF97-8F4D-D140B0963EAC"/>
+</associations>
+</Column>
+<Column name="COD_COLUNA" id="619ED05D-65A6-A40C-A57E-5D2E863494A1">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 13:11:30 UTC</createdTime>
+<commentInRDBMS>Coluna do dicionário</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COL</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3B75B523-78BE-ED17-F146-FC99F8B8BD5D" referredColumn="E87AEBD6-8756-D889-4B21-803622330C9B"/>
+</associations>
+</Column>
+<Column name="ALIAS_COLUNA" id="578D8105-2AB4-D0F2-FAAA-469262AA4BDB">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 14:44:51 UTC</createdTime>
+<commentInRDBMS>Apelido da coluna</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_TRANSFORMACAO_CALC" id="78BBE3DB-784E-BAD9-46CF-8DB45A1D2A8B">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 14:37:19 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>TRANSF_CALC</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3FF56D0-5E7C-98F9-AB78-4928E65EA5F8" referredColumn="6D0B673D-0728-7E71-38A8-3DE4A5F3348A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="44163E89-BBBB-1EE4-3E9C-1B78928ADB31" name="PK_INTERFACE_COLUNA_TABELA">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 13:11:30 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF86126C-5958-74AE-A8B1-49E031712893"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F795ED6D-6591-F767-5522-B36548FFD317" name="UN_INTERFACE_TABELA_COLUNA">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 14:46:07 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAC4111E-FB38-65DE-E2E6-7193DC9C61FA"/>
+<colUsage columnID="578D8105-2AB4-D0F2-FAAA-469262AA4BDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6F41BB4-CE49-4E5D-11FA-DACF076B9194" name="FK_INTF_TAB_COL_COLUNA">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 13:12:22 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="619ED05D-65A6-A40C-A57E-5D2E863494A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F643F49F-0A0A-19F1-53B5-01F81BDBB041" name="FK_INTF_TAB_COL_TABELA">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-05 14:41:05 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAC4111E-FB38-65DE-E2E6-7193DC9C61FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1013D6AE-AF90-895A-8DF2-0063405BFC14" name="FK_INTF_TAB_COL_TRANSF">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-03 14:38:02 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78BBE3DB-784E-BAD9-46CF-8DB45A1D2A8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99985747-C179-465D-2182-15A2614B8404" schemaObject="6C32DCD9-5422-228E-952A-25A6EA88ED25" name="HISTORICO_EXECUCAO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:13:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<abbreviation>HIST_EXEC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_HISTORICO" id="573F6D9C-B574-AEE5-C506-E890D2AB9A38">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:14:09 UTC</createdTime>
+<commentInRDBMS>Chave primária</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<abbreviation>COD_HIST</abbreviation>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D8B3B9E-9524-18D9-02FE-5497D2491381" referredColumn="47A23B68-9826-DA8F-3260-68C95DD81754"/>
+</associations>
+</Column>
+<Column name="QTDE_REG_ARQUIVO" id="C6E228EE-693A-FE4D-925D-CC8C72ACB6D4">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:25:34 UTC</createdTime>
+<commentInRDBMS>Quantidade de registros no arquivo de entrada</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QTDE_REG_INSERIDOS" id="B76D7E84-2DF2-6F01-ADB8-624362543CE3">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:26:41 UTC</createdTime>
+<commentInRDBMS>Quantidade de registros inseridos</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QTDE_REG_ATUALIZADOS" id="C5000523-042C-6E14-77E8-1AFF257AF222">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:26:50 UTC</createdTime>
+<commentInRDBMS>Quantidade de registros atualizados</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QTDE_REG_REJEITADOS" id="734D8AA5-4E75-B405-38FE-FA319E23BFF8">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:27:01 UTC</createdTime>
+<commentInRDBMS>Quantidade de registros rejeitados</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QTDE_REG_IGNORADOS" id="FBFDC603-C09B-BACC-180D-B3A68166261B">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-16 13:22:57 UTC</createdTime>
+<commentInRDBMS>Quantidade de registros ignorados</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_ARQUIVO_NAO_CARREG" id="3A158F14-9A05-0C6A-4FF8-A7C3EB3EA55E">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 16:56:22 UTC</createdTime>
+<commentInRDBMS>Nome do arquivo &apos;não carregado&apos;</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_ARQUIVO_LOG" id="5B522CD3-642E-ACAA-9553-AC72349244D3">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 16:56:44 UTC</createdTime>
+<commentInRDBMS>Nome do arquivo de log</commentInRDBMS>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="347AA046-0AD4-2B38-304C-F817F657718A" name="PK_HISTORICO_EXECUCAO">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:14:28 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="573F6D9C-B574-AEE5-C506-E890D2AB9A38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72270DB5-CA66-986B-B122-C8DAEDFCA8DF" name="FK_HISTORICO_EXECUCAO_HIST">
+<createdBy>rgil</createdBy>
+<createdTime>2015-06-15 14:19:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="573F6D9C-B574-AEE5-C506-E890D2AB9A38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

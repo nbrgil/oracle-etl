@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D56A842-AF9A-E8B1-440E-9D6841D4DC8B" name="USUARIO_PERFIL">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 17:09:33 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<schemaObject>A507C5F4-681C-075D-CB75-662BA7E0AC7F</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_USUARIO_PERFIL" id="EFFA3928-0507-E7A6-F62B-7CA18D2C7CF1">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 17:10:00 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CA58C44-87FB-781A-8546-D37AE9118834" name="PK_USUARIO_PERFIL">
+<createdBy>rgil</createdBy>
+<createdTime>2015-02-24 17:10:00 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>modelo_etl_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFFA3928-0507-E7A6-F62B-7CA18D2C7CF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
